@@ -1,66 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!DOCTYPE html>
+<html lang="en">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Login Project</title>
+</head>
 
-## About Laravel
+<body>
+    <h1>Laravel Login Project</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+    <h2>Introduction</h2>
+    <p>This project is a simple example of implementing a login system using the PHP framework Laravel. The authentication system allows users to register, log in, and log out of the system.</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    <h2>Requirements</h2>
+    <p>Make sure you have the following installed before getting started:</p>
+    <ul>
+        <li>PHP >= 7.4</li>
+        <li>Composer</li>
+        <li>Laravel Installer</li>
+        <li>A MySQL database or another database supported by Laravel</li>
+    </ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+    <h2>Installation</h2>
+    <ol>
+        <li>Clone this repository to your computer:
+            <pre><code>git clone &lt;repository_url&gt;</code></pre>
+        </li>
+        <li>Navigate to the project directory:
+            <pre><code>cd project_name</code></pre>
+        </li>
+        <li>Install PHP dependencies using Composer:
+            <pre><code>composer install</code></pre>
+        </li>
+        <li>Create a <code>.env</code> file in the root of the project. You can copy the <code>.env.example</code> file and rename it to <code>.env</code>. Make sure to configure the environment variables related to the database.</li>
+        <li>Generate a Laravel application key:
+            <pre><code>php artisan key:generate</code></pre>
+        </li>
+        <li>Run the database migrations to create the necessary tables:
+            <pre><code>php artisan migrate</code></pre>
+        </li>
+    </ol>
 
-## Learning Laravel
+    <h2>Usage</h2>
+    <p>Once installation is complete, you can start the local development server by running the following command:</p>
+    <pre><code>php artisan serve</code></pre>
+    <p>You can now access your project in the browser at <code>http://localhost:8000</code>.</p>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Registration:</strong> Users can register a new account by providing a username, email, and password.</li>
+        <li><strong>Login:</strong> Registered users can log in using their email and password.</li>
+        <li><strong>Logout:</strong> Users can log out of the system whenever they wish.</li>
+    </ul>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    <h2>Project Structure</h2>
+    <p>The project structure follows Laravel conventions and includes the following main directories:</p>
+    <ul>
+        <li><code>app</code>: Contains models, controllers, and service classes of the application.</li>
+        <li><code>database</code>: Contains database migrations and data seeders.</li>
+        <li><code>resources</code>: Contains view files, including authentication views.</li>
+        <li><code>routes</code>: Contains application routing files.</li>
+        <li><code>tests</code>: Contains automated tests.</li>
+    </ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+    <h2>Contributing</h2>
+    <p>If you'd like to contribute to this project, follow these steps:</p>
+    <ol>
+        <li>Fork this repository.</li>
+        <li>Create a branch for your work (<code>git checkout -b feature/new-feature</code>).</li>
+        <li>Commit your changes (<code>git commit -am 'Add new feature'</code>).</li>
+        <li>Push your branch (<code>git push origin feature/new-feature</code>).</li>
+        <li>Open a pull request.</li>
+    </ol>
 
-## Laravel Sponsors
+    <h2>Useful Resources</h2>
+    <ul>
+        <li><a href="https://laravel.com/docs">Laravel Documentation</a></li>
+        <li><a href="https://laravel-news.com/">Laravel News - Official Laravel Blog</a></li>
+    </ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    <h2>Author</h2>
+    <p>This project was created by <a href="https://github.com/your_profile">Giovan Battista Lo Buglio</a>.</p>
 
-### Premium Partners
+    <h2>License</h2>
+    <p>This project is distributed under the <a href="LICENSE">MIT License</a>.</p>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    <p>If you have any questions or suggestions, feel free to contact me. Thank you for using this project!</p>
+</body>
 
-## Contributing
+</html>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
